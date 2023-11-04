@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller js</title>
+    <link rel="stylesheet" href="tallerjs.css" />
+</head>
+
+<body>
+    <section class="volver">    
+        <a title="Volver" href="https://jlcastano.neocities.org"><img src="./imagenes/volver.png" alt="Volver" /></a>
+    </section>
+    
+    <section class="contenedor-acordeon">
+        <h2>Taller js</h2>
+        <section class="acordeon">
+            <input type="radio" name="acordeon" id="btn-acordeon1" class="btn-acordeon">
+            <label for="btn-acordeon1">Punto 1</label>
+            <section class="contenido-acordeon">
+                <p>Ingreselos siguientes campos</p>
+                <tr>
+                    <ul class="lista">
+                        <p>Nombre </p>
+                        <input type="text" name="nombre" id="nombre">
+                    </ul>
+
+                    <ul class="lista">
+                        <p>Edad </p>
+                        <input type="text" name="edad" id="edad">
+                    </ul>
+                </tr>
+                <button onclick="punto1();">Ejecutar</button>
+                <p class="punto1"></p>
+
+            </section>
+        </section>
+
+        <section class="acordeon">
+            <input type="radio" name="acordeon" id="btn-acordeon2" class="btn-acordeon">
+            <label for="btn-acordeon2">Punto 2</label>
+            <section class="contenido-acordeon">
+                <h3>Seleccione la figura a la cual le quiere calcular el area</h3>
+
+                <section class="acordeon">
+                    <input type="checkbox" name="acordeon" id="btn-acordeonpunto21" class="btn-acordeon">
+                    <label for="btn-acordeonpunto21">Triangulo</label>
+                    <section class="contenido-acordeon">
+                        <tr>
+                            <ul class="lista">
+                                <p>Base </p>
+                                <input type="text" id="baseTriangulo">
+                            </ul>
+
+                            <ul class="lista">
+                                <p>Altura </p>
+                                <input type="text" id="alturaTriangulo">
+                            </ul>
+                        </tr>
+                        <button onclick="punto2Triangulo();">Ejecutar</button>
+                        <p class="areaTriangulo"></p>
+                    </section>
+                </section>
+
+                <section class="acordeon">
+                    <input type="checkbox" name="acordeon" id="btn-acordeonpunto22" class="btn-acordeon">
+                    <label for="btn-acordeonpunto22">Rectangulo</label>
+                    <section class="contenido-acordeon">
+                        <tr>
+                            <ul class="lista">
+                                <p>Base </p>
+                                <input type="text" id="baseRectangulo">
+                            </ul>
+
+                            <ul class="lista">
+                                <p>Altura </p>
+                                <input type="text" id="alturaRectangulo">
+                            </ul>
+                        </tr>
+                        <button onclick="punto2Rectangulo();">Ejecutar</button>
+                        <p class="areaRectangulo"></p>
+                    </section>
+                </section>
+
+                <section class="acordeon">
+                    <input type="checkbox" name="acordeon" id="btn-acordeonpunto23" class="btn-acordeon">
+                    <label for="btn-acordeonpunto23">Circulo</label>
+                    <section class="contenido-acordeon">
+                        <section class="lista">
+                            <p>Radio </p>
+                            <input type="text" id="radioCirculo">
+                        </section>
+                        <button onclick="punto2Circulo();">Ejecutar</button>
+                        <p class="areaCirculo"></p>
+                    </section>
+                </section>
+            </section>
+        </section>
+
+        <section class="acordeon">
+            <input type="radio" name="acordeon" id="btn-acordeon3" class="btn-acordeon">
+            <label for="btn-acordeon3">Punto 3</label>
+            <section class="contenido-acordeon">
+                <section class="lista">
+                    <p>Ingrese hasta que numero quiere verificar si es par o impar </p>
+                    <input type="text" id="punto3Numero">
+                </section>
+                <button onclick="punto3();">Ejecutar</button>
+                <p class="punto3"></p>
+            </section>
+        </section>
+
+        <section class="acordeon">
+            <input type="radio" name="acordeon" id="btn-acordeon4" class="btn-acordeon">
+            <label for="btn-acordeon4">Punto 4</label>
+            <section class="contenido-acordeon">
+                <h3>Ingrese un numero entero mayor que 1 para verificar si es primo</h3>
+                <input type="text" id="punto4Numero">
+                <section>
+                    <button onclick="punto4();">Ejecutar</button>
+                </section>
+                <p class="punto4"></p>
+            </section>
+        </section>
+
+        <section class="acordeon">
+            <input type="radio" name="acordeon" id="btn-acordeon5" class="btn-acordeon">
+            <label for="btn-acordeon5">Punto 5</label>
+            <section class="contenido-acordeon">
+                <h3>Ingrese un numero entero mayor que 1 para ver su factorial</h3>
+                <input type="text" id="punto5Numero">
+                <section>
+                    <button onclick="punto5();">Ejecutar</button>
+                </section>
+                <p class="punto5"></p>
+            </section>
+        </section>
+
+        <section class="acordeon">
+            <input type="radio" name="acordeon" id="btn-acordeon6" class="btn-acordeon">
+            <label for="btn-acordeon6">Punto 6</label>
+            <section class="contenido-acordeon">
+                <h3>Ingrese diferentes numeros, para cuando la suma sobre pase 50</h3>
+                <section>
+                    <button onclick="punto6();" onclick="">Ejecutar</button>
+                </section>
+                <p class="punto6"></p>
+            </section>
+        </section>
+
+        <section class="acordeon">
+            <input type="radio" name="acordeon" id="btn-acordeon7" class="btn-acordeon">
+            <label for="btn-acordeon7">Punto 7</label>
+            <section class="contenido-acordeon">
+                <h3>Muestra el resultado de una miltiplicacion de una matriz, en dos matrices, una para los resultados pares y otra para los impares</h3>
+                <section>
+                    <button onclick="punto7();" onclick="">Ejecutar</button>
+                </section>
+                <p class="punto7"></p>
+            </section>
+        </section>
+
+        <section class="acordeon">
+            <input type="radio" name="acordeon" id="btn-acordeon8" class="btn-acordeon">
+            <label for="btn-acordeon8">Punto 8</label>
+            <section class="contenido-acordeon">
+                <h3>Ingrese el numero del dni y se le asiganara una letra</h3>
+                <input type="text" id="punto8Numero">
+                <section>
+                    <button onclick="punto8();" onclick="">Ejecutar</button>
+                </section>
+                <p class="punto8"></p>
+            </section>
+        </section>
+
+        <section class="acordeon">
+            <input type="radio" name="acordeon" id="btn-acordeon9" class="btn-acordeon">
+            <label for="btn-acordeon9">Punto 9</label>
+            <section class="contenido-acordeon">
+                <h3>Ingrese una palabra y se mostrara el número de consonantes, vocales y longitud de la palabra</h3>
+                <input type="text" id="punto9Palabra">
+                <section>
+                    <button onclick="punto9();" onclick="">Ejecutar</button>
+                </section>
+                <p class="punto9"></p>
+            </section>
+        </section>
+
+        <section class="acordeon">
+            <input type="radio" name="acordeon" id="btn-acordeon9" class="btn-acordeon">
+            <label for="btn-acordeon9">Punto 9</label>
+            <section class="contenido-acordeon">
+                <h3>Ingrese una palabra y se mostrara el número de consonantes, vocales y longitud de la palabra</h3>
+                <input type="text" id="punto9Palabra">
+                <section>
+                    <button onclick="punto9();" onclick="">Ejecutar</button>
+                </section>
+                <p class="punto9"></p>
+            </section>
+        </section>
+
+        <section class="acordeon">
+            <input type="radio" name="acordeon" id="btn-acordeon10" class="btn-acordeon">
+            <label for="btn-acordeon10">Punto 10</label>
+            <section class="contenido-acordeon">
+                <h3>Ingrese un color y se determina si ese color esta entre los datos</h3>
+                <input type="text" id="punto10Palabra">
+                <section>
+                    <button onclick="punto10();" onclick="">Ejecutar</button>
+                </section>
+                <p class="punto10"></p>
+            </section>
+        </section>
+    </section>
+
+    <section class="contenedor-acordeon"></section>
+
+
+    <script src="tallerjs.js"></script>
+</body>
+
+</html>

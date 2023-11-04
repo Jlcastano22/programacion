@@ -1,0 +1,107 @@
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 15px;
+  color: #000;
+  text-align: center;
+  font-family: Harmattan;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+h2{
+  font-size: 30px;
+  text-align: center;
+}
+
+logo {
+  width: 450px;
+  height: 200px;
+  flex-shrink: 0;
+}
+
+
+body {
+  background-image: url("./imagenes/Fondo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%; 
+}
+
+.columna {
+  border-radius: 5px;
+  background: rgba(134, 155, 231, 0.7);
+  flex-direction: column;
+  justify-content: center;
+  width: 850px;
+  height: 170px;
+  color: #000;
+  font-family: Roboto;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 20px;
+}
+
+.fichaportafolio {
+  border-radius: 25px;
+  background: rgba(134, 155, 231, 0.70);
+  margin: 15px;
+  padding: 10px;
+  width: 500px;
+  height: 250px;
+}
+
+.ficha {
+  border-radius: 25px;
+  background: rgba(134, 155, 231, 0.70);
+  margin: 15px;
+  padding: 10px;
+  width: 250px;
+  height: 250px;
+}
+
+.fotografia {
+  width: 350px;
+  height: 350px;
+  border-radius: 360px;
+  padding: 100px;
+}
+
+.fila {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+footer {
+  background: rgba(44, 94, 221, 0.8);
+  color: #fff;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.dom {
+  border-radius: 5px;
+  background: rgba(134, 155, 231, 0.7);
+  flex-direction: column;
+  justify-content: center;
+  width: 1440px;
+  height: 300px;
+  color: #000;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 20px;
+}
